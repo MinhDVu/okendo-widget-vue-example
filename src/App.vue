@@ -8,7 +8,14 @@
 import HelloWorld from './components/HelloWorld.vue';
 import { configureOkendo } from '@okendo/okendo-widgets-vue';
 
-configureOkendo({ subscriberId: '99f886ce-b10d-443a-89c9-e52b83c22d92' });
+configureOkendo({
+    subscriberId: '20d7b234-9bce-4735-a606-ac6d673a91a9',
+    widgetSettings: {
+        dateFormat: 'MMM/d/yyyy',
+        enableFilters: true,
+        defaultReviewsSortOrder: 'rating asc'
+    }
+});
 export default {
     name: 'App',
     components: {

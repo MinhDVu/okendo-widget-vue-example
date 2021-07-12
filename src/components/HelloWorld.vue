@@ -1,22 +1,21 @@
 <template>
     <div class="page-wrapper">
         <h1>Minh's Meaty Meat Pies</h1>
-        <OkendoReviewsWidget :productId=bar :enableFilters=foo />
+        <OkendoCombinedWidget :productId=bar />
     </div>
 </template>
 
 <script>
-import { OkendoReviewsWidget } from '@okendo/okendo-widgets-vue';
+import { OkendoCombinedWidget } from '@okendo/okendo-widgets-vue';
 
 export default {
     name: 'HelloWorld',
     components: {
-        OkendoReviewsWidget
+        OkendoCombinedWidget
     },
     data () {
         return {
-            foo: false,
-            bar: 'shopify-1596736602164'
+            bar: 'shopify-3938292793441'
         }
     }
 };
